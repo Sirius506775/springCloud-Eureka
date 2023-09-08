@@ -1,0 +1,15 @@
+server:
+  port: 8092
+
+spring:
+  application:
+    name: eurekaClientService-2
+
+eureka:
+  instance:
+    prefer-ip-address: true # 애플리케이션 이름에 매핑되는 호스트명 등록 여부
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8181/eureka/
